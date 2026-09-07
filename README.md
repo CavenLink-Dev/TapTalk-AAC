@@ -12,6 +12,7 @@ This repository is the starting point for product design, legal and licensing re
 
 ## Documentation
 
+- [Start-to-finish plan](START_TO_FINISH_PLAN.md)
 - [Australian launch checklist](docs/AAC_iPad_Australia_Launch_Checklist.md)
 
 The checklist is practical research, not legal advice or a guarantee of NDIS eligibility, regulatory clearance, or App Store acceptance. Requirements must be checked again before release.
