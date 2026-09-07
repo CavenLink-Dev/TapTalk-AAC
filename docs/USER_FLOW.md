@@ -7,76 +7,34 @@ This file is the simple, version-controlled source of truth for the app flow. It
 ## Main app flow
 
 ```mermaid
-flowchart TD
-    A[Open TapTalk AAC] --> B{First time?}
-    B -- Yes --> C[Simple onboarding]
-    C --> D[Choose voice and card size]
-    D --> E[TapBoard]
-    B -- No --> E
-
-    E <--> F[TapTalk]
-    F <--> G[QuickTalk]
-    G <--> E
-
-    E --> H[Settings]
-    F --> H
-    G --> H
-    H --> E
-```
-
-## TapBoard flow
-
-```mermaid
 flowchart LR
-    A[TapBoard] --> B[Tap symbol card]
-    B --> C[Add word to message bar]
-    C --> D{Next action}
-    D -->|Add more| B
-    D -->|Speak| E[Speak full message]
-    D -->|Backspace| F[Remove last word]
-    D -->|Clear| G[Confirm and clear]
-    E --> H[Stop or finish speech]
+    openApp([Open app]) --> account{Have an account?}
+    account -->|No| create[Create account]
+    create --> setup[Set voice, card size and accessibility]
+    setup --> tabs{Choose bottom tab}
+    account -->|Yes| tabs
+
+    tabs -->|TapBoard| tapBoard[TapBoard]
+    tapBoard --> boardTask[Tap cards, build a message and speak]
+    boardTask --> boardDone([Message spoken])
+
+    tabs -->|TapTalk| tapTalk[TapTalk]
+    tapTalk --> typeMessage[Type a message]
+    typeMessage --> talkChoice{Speak or save?}
+    talkChoice -->|Speak| talkDone([Message spoken])
+    talkChoice -->|Save| save[Save to QuickTalk]
+    save --> quickTalk
+
+    tabs -->|QuickTalk| quickTalk[QuickTalk]
+    quickTalk --> quickTask[Tap a saved phrase]
+    quickTask --> quickDone([Phrase spoken])
+
+    tabs -->|Settings| settings[Settings]
+    settings --> settingsTask[Voice, display, data, privacy, licences and help]
+    settingsTask --> settingsDone([Settings saved])
 ```
 
-## TapTalk flow
-
-```mermaid
-flowchart LR
-    A[TapTalk] --> B[Type a message]
-    B --> C{Next action}
-    C -->|Speak| D[Speak typed message]
-    C -->|Save| E[Name or confirm phrase]
-    E --> F[Save to QuickTalk]
-    F --> G[Show saved confirmation]
-```
-
-## QuickTalk flow
-
-```mermaid
-flowchart LR
-    A[QuickTalk] --> B[Tap saved phrase]
-    B --> C[Speak phrase]
-    A --> D[Add or edit]
-    D --> E[Type phrase and label]
-    E --> F[Save]
-    A --> G[Delete phrase]
-    G --> H{Confirm deletion?}
-    H -- Yes --> I[Delete]
-    H -- No --> A
-```
-
-## Settings flow
-
-```mermaid
-flowchart TD
-    A[Settings] --> B[Speech: voice, preview, speed]
-    A --> C[Display: card and text size]
-    A --> D[Data: reset, backup or export]
-    A --> E[Privacy]
-    A --> F[Symbols and licences]
-    A --> G[Help and audio troubleshooting]
-    A --> H[About and app version]
-```
+This is the high-level navigation flow. Detailed editing, deletion, error, and recovery flows should be designed separately so the main journey stays easy to scan.
 
 ## Flow rules
 
