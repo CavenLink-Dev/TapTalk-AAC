@@ -23,7 +23,8 @@ Use on-device speech and local storage first. Do not add accounts, cloud sync, A
 - [ ] Choose the version-one access methods: touch, VoiceOver, hardware keyboard, and/or Switch Control.
 - [ ] Decide the business model: paid download, permanent unlock, subscription, or free.
 - [ ] Decide whether sales will be App Store only or also supplied directly through NDIS arrangements.
-- [ ] Choose the development approach before writing app code: native SwiftUI is the current starting recommendation.
+- [x] Use Expo with React Native and TypeScript. Start the interactive prototype in Expo Go on Expo SDK 57, which is the current iOS Expo Go-compatible SDK as checked on 7 September 2026.
+- [ ] Plan to move from Expo Go to an Expo development build before production testing, native-library work, TestFlight, and App Store release.
 
 **Done when:** a one-page product brief fixes the audience, purpose, features, devices, price, and sales route.
 
@@ -52,7 +53,10 @@ Use on-device speech and local storage first. Do not add accounts, cloud sync, A
 
 ## Phase 4 — Set up engineering
 
-- [ ] Create the iPad app project, bundle identifier, development team, environments, and signing setup.
+- [ ] Create the project with the current `create-expo-app` default, confirm Expo SDK 57, and run the first prototype in Expo Go on an iPad.
+- [ ] Sign in to the same Expo account in Expo CLI and Expo Go when testing on a physical iOS device.
+- [ ] Add `expo-dev-client` and create an Expo development build when the prototype needs custom native code or production-grade testing.
+- [ ] Set the iOS bundle identifier, Apple development team, environments, and signing setup.
 - [ ] Establish reusable design tokens and components for cards, buttons, tabs, message bars, and sheets.
 - [ ] Define local data models for boards, cards, messages, phrases, and settings.
 - [ ] Add automated formatting, static checks, unit tests, and a simple continuous-integration build.
