@@ -2,7 +2,7 @@
 
 TapTalk AAC is an early-stage iPad communication app concept for Australia. The planned experience is deliberately simple and centres on three main areas:
 
-- **Talk** — tap AAC symbol cards to build and speak a message.
+- **TapBoard** — tap AAC symbol cards to build and speak a message.
 - **TapTalk** — type a message, speak it aloud, and save useful phrases.
 - **QuickTalk** — speak saved phrases with one tap.
 
@@ -13,6 +13,7 @@ This repository is the starting point for product design, legal and licensing re
 ## Documentation
 
 - [Start-to-finish plan](START_TO_FINISH_PLAN.md)
+- [User flow](docs/USER_FLOW.md)
 - [Australian launch checklist](docs/AAC_iPad_Australia_Launch_Checklist.md)
 
 The checklist is practical research, not legal advice or a guarantee of NDIS eligibility, regulatory clearance, or App Store acceptance. Requirements must be checked again before release.

@@ -2,7 +2,7 @@
 
 Prepared for Keanu Caven, Adelaide, South Australia  
 Research checked: 7 September 2026  
-Product: Talk, TapTalk and QuickTalk, with Settings
+Product: TapBoard, TapTalk and QuickTalk, with Settings
 
 This is a practical development and compliance guide, not legal clearance or a guarantee of App Store acceptance. It assumes an Australian launch of a standalone communication app. Final obligations depend on its claims, users, data flows, payment model and services. Have an Australian technology/privacy lawyer review those decisions and obtain regulatory advice where indicated.
 
@@ -197,7 +197,7 @@ Australian disability-discrimination obligations can apply to digital goods and 
 
 **Recommended acceptance criteria for this app:**
 
-- [ ] Talk, TapTalk, QuickTalk and Settings work with VoiceOver and supported alternative input methods.
+- [ ] TapBoard, TapTalk, QuickTalk and Settings work with VoiceOver and supported alternative input methods.
 - [ ] Symbol labels remain readable with enlarged text, sufficient contrast and without relying on colour alone.
 - [ ] Buttons have large touch targets, predictable focus and clear selected states.
 - [ ] Hardware keyboard and Switch Control workflows are tested where supported.
@@ -216,7 +216,7 @@ The first three rows are the product you requested. The remaining rows map the c
 
 | Page or location | Include | Status |
 | --- | --- | --- |
-| Talk | Licensed symbol cards, message bar, speak, backspace/clear and stop speech | Core product; symbol rights required |
+| TapBoard | Licensed symbol cards, message bar, speak, backspace/clear and stop speech | Core product; symbol rights required |
 | TapTalk | Keyboard, editable message, speak and save-to-QuickTalk | Core product |
 | QuickTalk | Saved phrases; speak, add, edit and delete with appropriate confirmation | Core product |
 | Settings → Speech | Available voice, preview, speed and speak-on-tap | Recommended |
@@ -264,7 +264,7 @@ Australian Consumer Law applies to relevant software sales and consumer guarante
 
 1. **Define:** intended purpose, audience, territory, pricing and data map.
 2. **Resolve rights and regulation:** choose licensed symbols; document TGA and privacy assessments.
-3. **Build the core:** Talk, TapTalk, QuickTalk, Settings, reliable speech and local persistence.
+3. **Build the core:** TapBoard, TapTalk, QuickTalk, Settings, reliable speech and local persistence.
 4. **Add operational pages:** privacy, licences, support and applicable payment/account controls.
 5. **Test with users:** accessible, consented testing with AAC users and relevant professionals; fix communication failures first.
 6. **Prepare commercial operations:** seller identity, support, payments, tax and any NDIS supply process.

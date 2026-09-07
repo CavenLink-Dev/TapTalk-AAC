@@ -8,7 +8,7 @@ This is the broad roadmap for taking TapTalk from an idea to a maintained iPad a
 
 Build four simple areas:
 
-1. **Talk** — tap licensed symbol cards, build a message, speak it, stop speech, backspace, and clear.
+1. **TapBoard** — tap licensed symbol cards, build a message, speak it, stop speech, backspace, and clear.
 2. **TapTalk** — type a message, speak it, and save it as a reusable phrase.
 3. **QuickTalk** — tap, add, edit, reorder, and delete saved phrases.
 4. **Settings** — speech, display, data, privacy, symbols and licences, about, and help.
@@ -41,7 +41,7 @@ Use on-device speech and local storage first. Do not add accounts, cloud sync, A
 
 ## Phase 3 — Design the complete flow
 
-- [ ] Create simple wireframes for Talk, TapTalk, QuickTalk, Settings, onboarding, help, and empty/error states.
+- [ ] Create simple wireframes for TapBoard, TapTalk, QuickTalk, Settings, onboarding, help, and empty/error states.
 - [ ] Keep a consistent message bar and predictable navigation.
 - [ ] Keep important card positions stable.
 - [ ] Define large touch targets, readable text, clear focus, sufficient contrast, and non-colour status cues.
@@ -65,7 +65,7 @@ Use on-device speech and local storage first. Do not add accounts, cloud sync, A
 Build in this order:
 
 - [ ] Speech service using Apple's on-device voices, with preview, speed, fallback, interruption, and stop controls.
-- [ ] Talk screen and message-building behaviour.
+- [ ] TapBoard screen and message-building behaviour.
 - [ ] TapTalk keyboard workflow and speak action.
 - [ ] Save-to-QuickTalk flow.
 - [ ] QuickTalk phrase list with add, edit, reorder, and confirmed deletion.
@@ -157,7 +157,7 @@ Do not launch until all of these are true:
 - [ ] Every symbol and third-party dependency has documented distribution rights.
 - [ ] The intended purpose and TGA position are documented.
 - [ ] Actual data behaviour matches the privacy policy and App Store disclosures.
-- [ ] Talk, TapTalk, QuickTalk, speech, settings, and saved data work on physical iPads.
+- [ ] TapBoard, TapTalk, QuickTalk, speech, settings, and saved data work on physical iPads.
 - [ ] Critical VoiceOver and alternative-input workflows pass.
 - [ ] Users have tested the main communication tasks and critical failures are fixed.
 - [ ] Purchases, NDIS information, support, licences, and marketing are accurate.
