@@ -2,6 +2,8 @@
 
 This file is the simple, version-controlled source of truth for the app flow. It renders directly in GitHub and can be recreated visually in FigJam or Figma when screen design begins.
 
+**Editable visual board:** [TapTalk AAC User Flow Wireframe in FigJam](https://www.figma.com/board/0T8h0DmQeU0GxHQLMLQvum)
+
 ## Main app flow
 
 ```mermaid
